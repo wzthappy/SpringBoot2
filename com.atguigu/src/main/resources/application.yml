@@ -1,0 +1,14 @@
+spring:
+  mvc:
+#    static-path-pattern: /res/**  # 设置静态资源的默认访问 前缀
+    hiddenmethod:
+      filter:
+        enabled: true   # 开启页面 (表单)的 Rest风格格式
+
+#  web:
+#    resources:
+#      static-locations: classpath:/kkkkk  # 改变默认的资源文件的路径  改变以后其他的默认资源包就访问不到了
+
+server:
+  servlet:
+    context-path: /world

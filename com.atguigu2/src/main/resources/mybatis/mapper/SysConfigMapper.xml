@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace: 名称空间 -->
+<mapper namespace="admin.mapper.SysConfigMapper">
+
+  <select id="getAcct" resultType="admin.bean.SysConfig">
+    select * from sys_config where variable = #{variable}
+  </select>
+</mapper>
